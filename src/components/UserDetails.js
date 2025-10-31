@@ -22,11 +22,12 @@ const UserDetails = () => {
 
   return (
     <div>
-      <p>Name: {user.name}</p>
-      <p>Username: {user.username}</p>
-      <p>Email: {user.email}</p>
-      <p>Phone: {user.phone}</p>
-      <p>Website: {user.website}</p>
+      <h1>User Details</h1>
+      <p><strong>Name:</strong> {user.name}</p>
+      <p><strong>Username:</strong> {user.username}</p>
+      <p><strong>Email:</strong> {user.email}</p>
+      <p><strong>Phone:</strong> {user.phone}</p>
+      <p><strong>Website:</strong> {user.website}</p>
     </div>
   );
 };
