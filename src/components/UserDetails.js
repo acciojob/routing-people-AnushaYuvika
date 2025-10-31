@@ -11,10 +11,13 @@ const UserDetails = () => {
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setUser(data);
-        setLoading(false);
+        setTimeout(() => {
+          setUser(data);
+          setLoading(false);
+        }, 500);
       });
   }, [id]);
+
 
   if (loading) {
     return <div>Loading...</div>;
